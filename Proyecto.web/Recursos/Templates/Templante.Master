@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Templante.master.cs" Inherits="Proyecto.web.Recursos.Templates.Templante" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MAXI-PEZ</title>
+    <!-- Bootstrap core CSS-->
+    <link href="../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="../../css/sb-admin.css" rel="stylesheet">
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../../js/sb-admin.min.js"></script>
+    <asp:ContentPlaceHolder runat="server" ID="header"></asp:ContentPlaceHolder>
+</head>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+    <form runat="server">
+        <!-- Navigation-->
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav"  >
+            <a class="navbar-brand" href="../../vistas/Index/Index.aspx">
+                <h3><b>MAXI-PEZ</b></h3>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <%---FILA 1---%>
+               <div class="collapse navbar-collapse"  id="navbarResponsive">
+                <ul class="navbar-nav navbar-sidenav" id="Inicio">
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Inicio">
+                        <a class="nav-link" href="../../vistas/Index/Index.aspx">
+                            <i class="fa fa-fw fa-home"></i>
+                            <span class="nav-link-text">Inicio</span>
+                        </a>
+                    </li>
+
+                       <%---FILA 2---%>
+
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Produtos">
+                        <a class="nav-link" href="../../vistas/Productos/Productos.aspx">
+                            <i class="fa fa-fw fa-fish"></i>
+                            <span class="nav-link-text">Produtos</span>
+                        </a>
+                    </li>
+                       <%---FILA 3---%>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Ventas">
+                        <a class="nav-link" href="../../vistas/Ventas/Ventas.aspx">
+                            <i class="fa fa-fw fa-shopping-basket"></i>
+                            <span class="nav-link-text">Ventas</span>
+                        </a>
+                    </li>
+                       <%---FILA 4---%>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Clientes">
+                        <a class="nav-link" href="../../vistas/PosiblesClientes/PosiblesClientes.aspx">
+                            <i class="fa fa-fw fa-users"></i>
+                            <span class="nav-link-text">Clientes</span>
+                        </a>
+                    </li>
+                       <%---FILA 5---%>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Usuarios">
+                        <a class="nav-link" href="../../vistas/Usuarios/Usuarios.aspx">
+                            <i class="fa fa-fw fa-address-book"></i>
+                            <span class="nav-link-text">Usuarios</span>
+                        </a>
+                    </li>
+                       <%---FILA 7---%>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Devoluciones">
+                        <a class="nav-link" href="../../vistas/Devoluciones/Devoluciones.aspx">
+                            <i class="fa fa-fw fa-truck"></i>
+                            <span class="nav-link-text">Devoluciones</span>
+                        </a>
+                    </li>
+                       <%---FILA 9---%>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Inventarios">
+                        <a class="nav-link" href="../../vistas/Inventarios/Inventarios.aspx">
+                            <i class="fa fa-fw fa-book-reader"></i>
+                            <span class="nav-link-text">Inventarios</span>
+                        </a>
+                    </li>
+                       <%---FILA 10---%>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Facturas">
+                        <a class="nav-link" href="../../vistas/Facturas/Facturas.aspx">
+                            <i class="fa fa-fw fa-money-check-alt"></i>
+                            <span class="nav-link-text">Facturas</span>
+                        </a>
+                    </li>
+                       <%---FILA 11---%>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Proveedores">
+                        <a class="nav-link" href="../../vistas/Proveedores/Proveedores.aspx">
+                            <i class="fa fa-fw fa-address-card"></i>
+                            <span class="nav-link-text">Proveedores</span>
+                        </a>
+                    </li>
+                       <%---FILA 13---%>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tipo Pago">
+                        <a class="nav-link" href="../../vistas/TipoPago/TipoPago.aspx">
+                            <i class="fa fa-fw fa-donate"></i>
+                            <span class="nav-link-text">Tipo Pago</span>
+                        </a>
+                    </li>
+                       <%---FILA 14---%>
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Proveedor Producto">
+                        <a class="nav-link" href="../../vistas/Proveedor_Producto/Proveedor_Producto.aspx">
+                            <i class="fa fa-fw fa-clipboard-check"></i>
+                            <span class="nav-link-text">Proveedor Producto</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                       <asp:Label runat="server" ID="lblUsuario" CssClass="btn btn-success"></asp:Label>
+                    </li>
+
+                    <li class="nav-item">
+                        <asp:Button runat="server" ID="btnSalir" CssClass="btn btn-danger" Text="Salir" OnClick="Salir_Click"></asp:Button>
+                    </li>
+                </ul>
+            </div>
+           
+        </nav>
+        <div class="content-wrapper">
+            <div class="container-fluid">
+                <asp:ContentPlaceHolder ID="contenedor" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <footer class="sticky-footer">
+                <div class="container">
+                    <div class="text-center">
+                        <small>Copyright © Your Website 2018</small>
+                    </div>
+                </div>
+            </footer>
+            <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+C:\Users\LuiisMii Payan Silva\source\repos\Proyecto\Proyecto.Logica\obj\Debug\Proyecto.Logica.csprojAssemblyReference.cache
+C:\Users\LuiisMii Payan Silva\source\repos\Proyecto\Proyecto.Logica\obj\Debug\Proyecto.Logica.csproj.CoreCompileInputs.cache
+C:\Users\LuiisMii Payan Silva\source\repos\Proyecto\Proyecto.Logica\bin\Debug\Proyecto.Logica.dll
+C:\Users\LuiisMii Payan Silva\source\repos\Proyecto\Proyecto.Logica\bin\Debug\Proyecto.Logica.pdb
+C:\Users\LuiisMii Payan Silva\source\repos\Proyecto\Proyecto.Logica\obj\Debug\Proyecto.Logica.dll
+C:\Users\LuiisMii Payan Silva\source\repos\Proyecto\Proyecto.Logica\obj\Debug\Proyecto.Logica.pdb
+D:\PROYECTOS VISUAL\Proyecto-master\Proyecto.Logica\bin\Debug\Proyecto.Logica.dll
+D:\PROYECTOS VISUAL\Proyecto-master\Proyecto.Logica\bin\Debug\Proyecto.Logica.pdb
+D:\PROYECTOS VISUAL\Proyecto-master\Proyecto.Logica\obj\Debug\Proyecto.Logica.csprojAssemblyReference.cache
+D:\PROYECTOS VISUAL\Proyecto-master\Proyecto.Logica\obj\Debug\Proyecto.Logica.csproj.CoreCompileInputs.cache
+D:\PROYECTOS VISUAL\Proyecto-master\Proyecto.Logica\obj\Debug\Proyecto.Logica.dll
+D:\PROYECTOS VISUAL\Proyecto-master\Proyecto.Logica\obj\Debug\Proyecto.Logica.pdb
+D:\PROYECTOS VISUAL\Proyecto Web\Proyecto.Logica\bin\Debug\Proyecto.Logica.dll
+D:\PROYECTOS VISUAL\Proyecto Web\Proyecto.Logica\bin\Debug\Proyecto.Logica.pdb
+D:\PROYECTOS VISUAL\Proyecto Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.csprojAssemblyReference.cache
+D:\PROYECTOS VISUAL\Proyecto Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.csproj.CoreCompileInputs.cache
+D:\PROYECTOS VISUAL\Proyecto Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.dll
+D:\PROYECTOS VISUAL\Proyecto Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.pdb
+D:\PROYECTOS VISUAL\Proyecto Integrador Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.csproj.CoreCompileInputs.cache
+D:\PROYECTOS VISUAL\Proyecto Integrador Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.dll
+D:\PROYECTOS VISUAL\Proyecto Integrador Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.pdb
+D:\PROYECTOS VISUAL\Proyecto Integrador Web\Proyecto.Logica\bin\Debug\Proyecto.Logica.dll
+D:\PROYECTOS VISUAL\Proyecto Integrador Web\Proyecto.Logica\bin\Debug\Proyecto.Logica.pdb
+D:\PROYECTOS VISUAL\Proyecto Integrador Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.csprojAssemblyReference.cache
+C:\Users\LUISMY\source\repos\Proyecto Integrador Web\Proyecto.Logica\bin\Debug\Proyecto.Logica.dll
+C:\Users\LUISMY\source\repos\Proyecto Integrador Web\Proyecto.Logica\bin\Debug\Proyecto.Logica.pdb
+C:\Users\LUISMY\source\repos\Proyecto Integrador Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.csprojAssemblyReference.cache
+C:\Users\LUISMY\source\repos\Proyecto Integrador Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.csproj.CoreCompileInputs.cache
+C:\Users\LUISMY\source\repos\Proyecto Integrador Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.dll
+C:\Users\LUISMY\source\repos\Proyecto Integrador Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.pdb
+C:\Users\LUISMY\source\repos\Proyecto Integrador Web\Proyecto.Logica\bin\Debug\Proyecto.Logica.dll.config
+C:\Users\LUISMY\source\repos\Proyecto Integrador Web\Proyecto.Logica\bin\Debug\EntityFramework.dll
+C:\Users\LUISMY\source\repos\Proyecto Integrador Web\Proyecto.Logica\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\LUISMY\source\repos\Proyecto Integrador Web\Proyecto.Logica\bin\Debug\EntityFramework.xml
+C:\Users\LUISMY\source\repos\Proyecto Integrador Web\Proyecto.Logica\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\LUISMY\source\repos\Proyecto Integrador Web\Proyecto.Logica\obj\Debug\Proyecto.Logica.csproj.CopyComplete
