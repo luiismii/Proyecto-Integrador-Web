@@ -110,12 +110,12 @@
                         </a>
                     </li>
                        <%---FILA 14---%>
-                    <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Proveedor Producto">
+                  <%--  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Proveedor Producto">
                         <a class="nav-link" href="../../vistas/Proveedor_Producto/Proveedor_Producto.aspx">
                             <i class="fa fa-fw fa-clipboard-check"></i>
                             <span class="nav-link-text">Proveedor Producto</span>
                         </a>
-                    </li>
+                    </li>--%>
 
                 </ul>
                 <ul class="navbar-nav ml-auto">

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace Proyecto.web.vistas.TipoPago
@@ -14,9 +10,9 @@ namespace Proyecto.web.vistas.TipoPago
             if (!IsPostBack)
             {
                 Controladores.TipoPagoControladores obTipoPagoControladores = new Controladores.TipoPagoControladores();
-                ddlId_TipoPago.DataSource = obTipoPagoControladores.GetTodoslosTipoPagoController();
+                gvwTipopago.DataSource = obTipoPagoControladores.GetTodoslosTipoPagoController();
                 ddlId_TipoPago.DataTextField = "inId_TipoPago";
-                txtDescripcion.DataBind();
+                gvwTipopago.DataBind();
             }
         }
 
@@ -68,4 +64,5 @@ namespace Proyecto.web.vistas.TipoPago
 
             }
         }
+    }
 }

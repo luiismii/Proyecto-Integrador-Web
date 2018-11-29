@@ -13,7 +13,7 @@
                     <div class="form-row">
                         <div class="col-md-6">
                             <asp:Label runat="server" ID="lblId_Devoluciones" Text="Id_Devoluciones"></asp:Label>
-                            <asp:DropDownList runat="server" ID="ddlDevoluciones" CssClass="form-control"></asp:DropDownList>
+                            <asp:DropDownList runat="server" ID="ddlDevoluciones"  Enabled="false" CssClass="form-control"></asp:DropDownList>
                         </div>
                         <div class="col-md-6">
                             <asp:Label runat="server" ID="lblId_Producto" Text="Id_Producto"></asp:Label>

@@ -12,8 +12,8 @@
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-12">
-                            <asp:Label runat="server" ID="lblId_TipoPago" Text="Id_TipoPago"></asp:Label>
-                            <asp:DropDownList runat="server" ID="ddlId_TipoPago" CssClass="form-control"></asp:DropDownList>
+                            <asp:Label runat="server" ID="lblId_TipoPago"  Text="Id_TipoPago"></asp:Label>
+                            <asp:DropDownList runat="server" ID="ddlId_TipoPago" Enabled="false" CssClass="form-control"></asp:DropDownList>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
     <div class="form-group">
         <div class="form-row">
             <div class="col-md-12">
-                <h3><label class="badge badge-primary">Todos los Productos</label></h3>
+                <h3><label class="badge badge-primary">Todos los Tipos De pagos</label></h3>
                 <asp:GridView Width="100%" runat="server" OnRowCommand="gvw_TipopagoRowCommand" EmptyDataText="No se encontraron registros" AutoGenerateColumns="false" ID="gvwTipopago"  BackColor="Turquoise" BorderColor="black" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black">
                     <Columns>
                         <asp:TemplateField HeaderText="Codigo">

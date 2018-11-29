@@ -10,6 +10,9 @@ namespace Proyecto.Logica.BL
         {
             using (var db = new Entidades.Entities())
             {
+
+
+
                 var listProductos = (from _proveedorProductos in db.PROVEEDOR_PRODUCTO
                                      join _productos in db.PRODUCTOS on _proveedorProductos.Id_Producto equals _productos.Id_Producto
                                      where _proveedorProductos.Id_Proveedor == proveedorId
