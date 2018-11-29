@@ -13,103 +13,121 @@ namespace Proyecto.web.vistas.PosiblesClientes {
     public partial class PosiblesClientes {
         
         /// <summary>
-        /// Control lblOpcion.
+        /// Control ScriptManager1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblOpcion;
+        protected global::System.Web.UI.ScriptManager ScriptManager1;
         
         /// <summary>
-        /// Control lblId_Cliente.
+        /// Control lblPrimer_Nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblId_Cliente;
+        protected global::System.Web.UI.WebControls.Label lblPrimer_Nombre;
         
         /// <summary>
-        /// Control txtId_Cliente.
+        /// Control txtPrimer_Nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtId_Cliente;
+        protected global::System.Web.UI.WebControls.TextBox txtPrimer_Nombre;
         
         /// <summary>
-        /// Control lblPrimerNombre.
+        /// Control tbwePrimer_Nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrimerNombre;
+        protected global::AjaxControlToolkit.TextBoxWatermarkExtender tbwePrimer_Nombre;
         
         /// <summary>
-        /// Control txtPrimerNombre.
+        /// Control lblSegundo_Nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPrimerNombre;
+        protected global::System.Web.UI.WebControls.Label lblSegundo_Nombre;
         
         /// <summary>
-        /// Control lblSegundoNombre.
+        /// Control txtSegundo_Nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSegundoNombre;
+        protected global::System.Web.UI.WebControls.TextBox txtSegundo_Nombre;
         
         /// <summary>
-        /// Control txtSegundoNombre.
+        /// Control tbweSegundo_Nombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSegundoNombre;
+        protected global::AjaxControlToolkit.TextBoxWatermarkExtender tbweSegundo_Nombre;
         
         /// <summary>
-        /// Control lblPrimerApellido.
+        /// Control lblPrimer_Apellido.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPrimerApellido;
+        protected global::System.Web.UI.WebControls.Label lblPrimer_Apellido;
         
         /// <summary>
-        /// Control txtPrimerApellido.
+        /// Control txtPrimer_Apellido.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtPrimerApellido;
+        protected global::System.Web.UI.WebControls.TextBox txtPrimer_Apellido;
         
         /// <summary>
-        /// Control lblSegundoApellido.
+        /// Control tbwePrimer_Apellido.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSegundoApellido;
+        protected global::AjaxControlToolkit.TextBoxWatermarkExtender tbwePrimer_Apellido;
         
         /// <summary>
-        /// Control txtSegundoApellido.
+        /// Control lblSegundo_Apellido.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSegundoApellido;
+        protected global::System.Web.UI.WebControls.Label lblSegundo_Apellido;
+        
+        /// <summary>
+        /// Control txtSegundo_Apellido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtSegundo_Apellido;
+        
+        /// <summary>
+        /// Control tbweSegundo_Apellido.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::AjaxControlToolkit.TextBoxWatermarkExtender tbweSegundo_Apellido;
         
         /// <summary>
         /// Control lblDireccion.
@@ -130,6 +148,15 @@ namespace Proyecto.web.vistas.PosiblesClientes {
         protected global::System.Web.UI.WebControls.TextBox txtDireccion;
         
         /// <summary>
+        /// Control tbweDireccion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::AjaxControlToolkit.TextBoxWatermarkExtender tbweDireccion;
+        
+        /// <summary>
         /// Control lblTelefono.
         /// </summary>
         /// <remarks>
@@ -146,6 +173,15 @@ namespace Proyecto.web.vistas.PosiblesClientes {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtTelefono;
+        
+        /// <summary>
+        /// Control tbweTelefono.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::AjaxControlToolkit.TextBoxWatermarkExtender tbweTelefono;
         
         /// <summary>
         /// Control lblCorreo.
@@ -166,6 +202,15 @@ namespace Proyecto.web.vistas.PosiblesClientes {
         protected global::System.Web.UI.WebControls.TextBox txtCorreo;
         
         /// <summary>
+        /// Control tbweCorreo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::AjaxControlToolkit.TextBoxWatermarkExtender tbweCorreo;
+        
+        /// <summary>
         /// Control lblFecha_Nacimiento.
         /// </summary>
         /// <remarks>
@@ -182,6 +227,24 @@ namespace Proyecto.web.vistas.PosiblesClientes {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFecha_Nacimiento;
+        
+        /// <summary>
+        /// Control tbweFecha_Nacimiento.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::AjaxControlToolkit.TextBoxWatermarkExtender tbweFecha_Nacimiento;
+        
+        /// <summary>
+        /// Control ceFecha.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender ceFecha;
         
         /// <summary>
         /// Control btnGuardar.

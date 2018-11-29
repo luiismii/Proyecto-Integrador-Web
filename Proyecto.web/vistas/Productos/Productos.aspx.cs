@@ -59,6 +59,15 @@ namespace Proyecto.web.vistas.Productos
                 gvwProductos.DataSource = productosControladores.GetTodoslosProductosController();
                 gvwProductos.DataBind();
             }
+
+            if (e.CommandName == "Editar")
+            {
+                int codigoCliente = Convert.ToInt32(((Label)gvwProductos.Rows[indice].FindControl("lblCodigo")).Text);
+                txtNombre_Productos.Text = string.IsNullOrEmpty(gvwProductos.Rows[indice].Cells[1].Text) ? string.Empty : gvwProductos.Rows[indice].Cells[1].Text;
+                txtPrecio.Text = string.IsNullOrEmpty(gvwProductos.Rows[indice].Cells[2].Text) ? string.Empty : gvwProductos.Rows[indice].Cells[2].Text;
+                txtDescripcion.Text = string.IsNullOrEmpty(gvwProductos.Rows[indice].Cells[3].Text) ? string.Empty : gvwProductos.Rows[indice].Cells[3].Text;
+               
+            }
         }
     }
 }

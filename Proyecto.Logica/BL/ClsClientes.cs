@@ -52,7 +52,7 @@ namespace Proyecto.Logica.BL
                 }
             }
             catch (Exception ex) { throw ex; }
-        }
+        }       
 
         public string updateClientes(Modelos.ClsPosiblesClientes obClsPosiblesClientes)
         {

@@ -11,7 +11,14 @@ namespace Proyecto.web.vistas.TipoPago
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                Controladores.FacturasControladores obFacturasControladores = new Controladores.FacturasControladores();
+                ddlProveedor.DataSource = ventasControladores.GetProveedoresController();
+                ddlProveedor.DataTextField = "NombreCompleto";
+                ddlProveedor.DataValueField = "inId_Proveedores";
+                ddlProveedor.DataBind();
+            }
         }
     }
 }

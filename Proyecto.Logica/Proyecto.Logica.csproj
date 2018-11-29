@@ -115,7 +115,6 @@
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Modelos\ClsCorreo.cs" />
-    <Compile Include="Modelos\ClsCrearCuenta.cs" />
     <Compile Include="Modelos\ClsDevoluciones.cs" />
     <Compile Include="Modelos\ClsFacturas.cs" />
     <Compile Include="Modelos\ClsInventarios.cs" />
