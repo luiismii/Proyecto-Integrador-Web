@@ -12,34 +12,83 @@ namespace Proyecto.web.vistas.PosiblesClientes
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			if (!IsPostBack)
-			{
-				try
-				{
-					Controladores.PosiblesClienteControladores obPosiblesClientesControladores = new Controladores.PosiblesClienteControladores();
-					DataSet dsConsulta = obPosiblesClientesControladores.getConsultarPosiblesClientesControladores();
+            if (!IsPostBack)
+            {
+                try
+                {
+                    Controladores.PosiblesClienteControladores obPosiblesClienteControladores = new Controladores.PosiblesClienteControladores();
+                    gvwClientes.DataSource = obPosiblesClienteControladores.GetTodoslosPosiblesClientesController();
+                    gvwClientes.DataBind();
+                }
+                catch (Exception ex) { }
+            }
 
-					if (dsConsulta.Tables[0].Rows.Count > 0)
-					{
-						gvwDatos.DataSource = dsConsulta;
-					}
-					else
-					{
-						gvwDatos.DataSource = null;
+        }
 
-					}
-					gvwDatos.DataBind();
-				}
-				catch (Exception ex)
-				{
-					ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Error', '" + ex.Message + "', 'error')</script>");
-				}
-			}
-		}
+		  //crear un usuario
+           try
+            {
+                Controladores.PosiblesClienteControladores obPosiblesClienteControladores = new Controladores.PosiblesClienteControladores();
+        Logica.Modelos.ClsPosiblesClientes obClsProductos = new Logica.Modelos.ClsPosiblesClientes
+        {
+            inId_Cliente = txtNombre_Productos.Text,
+            obClsUsuarios = new Logica.Modelos.ClsUsuarios {inId = txtNombre_Productos.Text,
+            inId_Cliente = txtNombre_Productos.Text,
+            inId_Cliente = txtNombre_Productos.Text,
+            inId_Cliente = txtNombre_Productos.Text,
+            stNombre_Producto = txtNombre_Productos.Text,
+            inPrecio = Convert.ToInt32(txtPrecio.Text),
+            stDescripcion = txtDescripcion.Text
 
-		protected void btnGuardar_Click(object sender, EventArgs e)
-		{
-			
-		}
-	}
+        };
+
+        ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Mensaje!', '" + obProductosControladores.CreateProductosController(obClsProductos) + "!', 'success') </script>");
+
+
+        }
+            catch (Exception ex)
+            {
+                ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Error!', '" + ex.Message + "!', 'error') </script>");
+        }
+    }
+
+
+    //eliminar un usuario
+
+    protected void gvwUsuarios_RowCommand(object sender, GridViewCommandEventArgs e)
+    {
+        int indice = Convert.ToInt32(e.CommandArgument);
+
+        if (e.CommandName == "Eliminar")
+        {
+            int codigoUsuario = Convert.ToInt32(((Label)gvwUsuarios.Rows[indice].FindControl("lblCodigo")).Text);
+
+            Controladores.UsuariosControladores productosControladores = new Controladores.UsuariosControladores();
+            productosControladores.EliminarUsuariosController(new Logica.Modelos.ClsUsuarios
+            {
+                inId = codigoUsuario
+            });
+
+            gvwUsuarios.DataSource = productosControladores.GetTodoslosUsuariosController();
+            gvwUsuarios.DataBind();
+        }
+
+        //Editar un usuario
+
+
+        if (e.CommandName == "Editar")
+        {
+            int codigoUsuario = Convert.ToInt32(((Label)gvwUsuarios.Rows[indice].FindControl("lblCodigo")).Text);
+
+            Controladores.UsuariosControladores productosControladores = new Controladores.UsuariosControladores();
+            productosControladores.updateUsuariosController(new Logica.Modelos.ClsUsuarios
+            {
+                inId = codigoUsuario
+            });
+
+            gvwUsuarios.DataSource = productosControladores.GetTodoslosUsuariosController();
+            gvwUsuarios.DataBind();
+        }
+    }
+}
 }

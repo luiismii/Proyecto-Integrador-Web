@@ -9,7 +9,7 @@ namespace Proyecto.Logica.Modelos
 	public class ClsPosiblesClientes
 	{
 		public int inId_Cliente { get; set; }
-        public ClsUsuarios ClsUsuarios { get; set; }
+        public ClsUsuarios obClsUsuarios { get; set; }
 		public string stPrimerNombre { get; set; }
 		public string stSegundoNombre { get; set; }
 		public string stPrimerApellido { get; set; }

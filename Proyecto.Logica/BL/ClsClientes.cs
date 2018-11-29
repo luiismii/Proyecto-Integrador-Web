@@ -8,7 +8,7 @@ namespace Proyecto.Logica.BL
 {
     public class ClsClientes
     {
-        public string CreateCliente(Modelos.ClsUsuarios Usuarios, Modelos.ClsPosiblesClientes Clientses)
+        public string CreateCliente(Modelos.ClsUsuarios Usuarios, Modelos.ClsPosiblesClientes Clientes)
         {
             try
             {
@@ -34,16 +34,16 @@ namespace Proyecto.Logica.BL
 
                     obEntities.CLIENTES.Add(new Entidades.CLIENTES
                     {
-                        Id_Cliente = Clientses.inId_Cliente,
+                        Id_Cliente = Clientes.inId_Cliente,
                         Usuario_Id = id,
-                        Primer_Nombre = Clientses.stPrimerNombre,
-                        Segundo_Nombre = Clientses.stSegundoNombre,
-                        Primer_Apellido = Clientses.stPrimerApellido,
-                        Segundo_Apellido = Clientses.stSegundoApellido,
-                        Direccion = Clientses.stDireccion,
-                        Telefono = Clientses.stTelefono,
-                        Correo = Clientses.stCorreo,
-                        Fecha_Nacimiento = Clientses.stFecha_Nacimiento
+                        Primer_Nombre = Clientes.stPrimerNombre,
+                        Segundo_Nombre = Clientes.stSegundoNombre,
+                        Primer_Apellido = Clientes.stPrimerApellido,
+                        Segundo_Apellido = Clientes.stSegundoApellido,
+                        Direccion = Clientes.stDireccion,
+                        Telefono = Clientes.stTelefono,
+                        Correo = Clientes.stCorreo,
+                        Fecha_Nacimiento = Clientes.stFecha_Nacimiento
                     });
 
                     obEntities.SaveChanges();
@@ -63,6 +63,7 @@ namespace Proyecto.Logica.BL
                     Entidades.CLIENTES obCLIENTES = (from Q in obEntities.CLIENTES
                                                      where Q.Id_Cliente == obClsPosiblesClientes.inId_Cliente
                                                      select Q).FirstOrDefault();
+                    obCLIENTES.Usuario_Id = obClsPosiblesClientes.obClsUsuarios.inId;
                     obCLIENTES.Primer_Nombre = obClsPosiblesClientes.stPrimerNombre;
                     obCLIENTES.Segundo_Nombre = obClsPosiblesClientes.stSegundoNombre;
                     obCLIENTES.Primer_Apellido = obClsPosiblesClientes.stPrimerApellido;
@@ -108,6 +109,7 @@ namespace Proyecto.Logica.BL
                             select new Modelos.ClsPosiblesClientes
                             {
                                 inId_Cliente = Q.Id_Cliente,
+                                obClsUsuarios = new Modelos.ClsUsuarios { inId = (int)Q.Usuario_Id },
                                 stPrimerNombre = Q.Primer_Nombre,
                                 stSegundoNombre = Q.Segundo_Nombre,
                                 stPrimerApellido = Q.Primer_Apellido,
@@ -132,6 +134,7 @@ namespace Proyecto.Logica.BL
                             select new Modelos.ClsPosiblesClientes
                             {
                                 inId_Cliente = Q.Id_Cliente,
+                                obClsUsuarios = new Modelos.ClsUsuarios { inId = (int)Q.Usuario_Id},
                                 stPrimerNombre = Q.Primer_Nombre,
                                 stSegundoNombre = Q.Segundo_Nombre,
                                 stPrimerApellido = Q.Primer_Apellido,

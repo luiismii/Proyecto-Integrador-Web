@@ -55,7 +55,6 @@
     <Compile Include="BL\ClsConexion.cs" />
     <Compile Include="BL\ClsGeneral.cs" />
     <Compile Include="BL\ClsPioridad.cs" />
-    <Compile Include="BL\ClsPosiblesClientes.cs" />
     <Compile Include="BL\ClsRecuperarPassword.cs" />
     <Compile Include="BL\ClsUsuarios.cs" />
     <Compile Include="BL\Devoluciones.cs" />

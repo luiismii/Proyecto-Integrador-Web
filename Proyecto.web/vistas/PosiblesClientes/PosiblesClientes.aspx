@@ -84,7 +84,7 @@
     <div class="form-group">
         <div class="form-row">
             <div class="col-md-12" style="overflow: auto">
-                <asp:GridView runat="server" ID="gvwDatos" Width="100%" AutoGenerateColumns="False" EmptyDataText="No Se Encontraron Registros" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
+                <asp:GridView runat="server" ID="gvwClientes" Width="100%" AutoGenerateColumns="False" EmptyDataText="No Se Encontraron Registros" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical">
                     <AlternatingRowStyle BackColor="#DCDCDC" />
                     <Columns>
                         <asp:TemplateField HeaderText="Id_Cliente">

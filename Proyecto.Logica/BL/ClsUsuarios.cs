@@ -70,7 +70,7 @@ namespace Proyecto.Logica.BL
                 using (Entidades.Entities obEntities = new Entidades.Entities())
                 {
                     if ((from q in obEntities.CLIENTES
-                         where q.Usuario_Id == obClsUsuarios.obClsPerfiles.inId
+                         where q.Usuario_Id == obClsUsuarios.inId
                          select q).Any())
                         throw new Exception("El Usuario esta asociado a un Cliente");
 
@@ -98,7 +98,7 @@ namespace Proyecto.Logica.BL
                                 inId = Q.Id,
                                 stLogin = Q.Login,
                                 stPassword = Q.Password,
-                                //obClsPerfiles = Q.Perfil_Id,
+                                obClsPerfiles =new Modelos.ClsPerfiles { inId = (int)Q.Perfil_Id },
                                 stImagen = Q.Imagen
                             }).ToList();
                 }
@@ -118,7 +118,7 @@ namespace Proyecto.Logica.BL
                                 inId = Q.Id,
                                 stLogin = Q.Login,
                                 stPassword = Q.Password,
-                                //obClsUsuarios.obClsPerfiles.Id = Q.Perfil_Id,
+                                obClsPerfiles = new Modelos.ClsPerfiles { inId = (int)Q.Perfil_Id },
                                 stImagen = Q.Imagen
                             }).ToList();
                 }

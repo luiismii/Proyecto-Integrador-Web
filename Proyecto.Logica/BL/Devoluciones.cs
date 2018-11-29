@@ -97,9 +97,9 @@ namespace Proyecto.Logica.BL
                                             inCantidad = (int)Q.Cantidad,
                                             stFecha = Q.Fecha,
                                             stCambio = Q.Cambio,
-                                            //obClsFacturas =  _devoluciones.Id_Factura,
+                                            obClsFacturas = new Modelos.ClsFacturas { inId_Factura = (int)Q.Id_Factura },
                                             stObservacio = Q.Observacion,
-                                            //obClsProductos = _devoluciones.Id_Producto
+                                            obClsProductos = new Modelos.ClsProductos { inId_Producto = (int)Q.Id_Producto }
 
                                         }).ToList();
 
@@ -120,9 +120,9 @@ namespace Proyecto.Logica.BL
                                 inId_Devoluciones = Q.Id_Devoluciones,
                                 inCantidad = (int)Q.Cantidad,
                                 stFecha = Q.Fecha,
-                                //obClsFacturas = Q.Id_Factura,
+                                obClsFacturas = new Modelos.ClsFacturas { inId_Factura = (int)Q.Id_Factura },
                                 stObservacio = Q.Observacion,
-                                //obClsProductos = Q.Id_Producto,
+                                obClsProductos = new Modelos.ClsProductos { inId_Producto = (int)Q.Id_Producto },
                             }).ToList();
                 }
             }
