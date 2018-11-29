@@ -69,6 +69,10 @@ namespace Proyecto.Logica.BL
             {
                 using (Entidades.Entities obEntities = new Entidades.Entities())
                 {
+                    if ((from q in obEntities.CLIENTES
+                         where q.Usuario_Id == obClsUsuarios.obClsPerfiles.inId
+                         select q).Any())
+                        throw new Exception("El Usuario esta asociado a un Cliente");
 
                     Entidades.USUARIOS obUSUARIOS = (from Q in obEntities.USUARIOS
                                                      where Q.Id == obClsUsuarios.inId
@@ -121,15 +125,18 @@ namespace Proyecto.Logica.BL
             }
             catch (Exception ex) { throw ex; }
         }
-        public List<Modelos.ClsUsuarios> GetValidarUsuario(Modelos.ClsUsuarios obClsUsuarios)
+        public bool GetValidarUsuario(Modelos.ClsUsuarios obClsUsuarios)
         {
             try
             {
                 using (Entidades.Entities obEntities = new Entidades.Entities())
                 {
-                    return (from Q in obEntities.USUARIOS
-                            where Q.Login == obClsUsuarios.stLogin 
-                            select new Modelos.ClsUsuarios { }).ToList();
+                    if ((from Q in obEntities.USUARIOS
+                         where Q.Login == obClsUsuarios.stLogin && Q.Password == obClsUsuarios.stPassword
+                         select Q).Any())
+                        return true;
+                    else
+                        return false;
                 }
             }
             catch (Exception ex) { throw ex; }

@@ -8,24 +8,42 @@ namespace Proyecto.Logica.BL
 {
     public class ClsClientes
     {
-        public string CreateCliente(Modelos.ClsPosiblesClientes obClsPosiblesClientes)
+        public string CreateCliente(Modelos.ClsUsuarios Usuarios, Modelos.ClsPosiblesClientes Clientses)
         {
             try
             {
                 using (Entidades.Entities obEntities = new Entidades.Entities())
                 {
+                    var id = 0;
+                    if (obEntities.USUARIOS.Select(x => x.Id).Any())
+                        id = obEntities.USUARIOS.Select(x => x.Id).Max();
+
+                    id += 1;
+                    Usuarios.inId = id;
+
+                    obEntities.USUARIOS.Add(new Entidades.USUARIOS
+                    {
+                        Id = Usuarios.inId,
+                        Login = Usuarios.stLogin,
+                        Password = Usuarios.stPassword,
+                        Perfil_Id = Usuarios.obClsPerfiles.inId,
+                        Imagen = Usuarios.stImagen
+                    });
+
+                    obEntities.SaveChanges();
+
                     obEntities.CLIENTES.Add(new Entidades.CLIENTES
                     {
-                        Id_Cliente = obClsPosiblesClientes.inId_Cliente,
-                        Usuario_Id = obClsPosiblesClientes.ClsUsuarios.inId,
-                        Primer_Nombre = obClsPosiblesClientes.stPrimerNombre,
-                        Segundo_Nombre = obClsPosiblesClientes.stSegundoNombre,
-                        Primer_Apellido = obClsPosiblesClientes.stPrimerApellido,
-                        Segundo_Apellido = obClsPosiblesClientes.stSegundoApellido,
-                        Direccion = obClsPosiblesClientes.stDireccion,
-                        Telefono = obClsPosiblesClientes.stTelefono,
-                        Correo = obClsPosiblesClientes.stCorreo,
-                        Fecha_Nacimiento = obClsPosiblesClientes.stFecha_Nacimiento
+                        Id_Cliente = Clientses.inId_Cliente,
+                        Usuario_Id = id,
+                        Primer_Nombre = Clientses.stPrimerNombre,
+                        Segundo_Nombre = Clientses.stSegundoNombre,
+                        Primer_Apellido = Clientses.stPrimerApellido,
+                        Segundo_Apellido = Clientses.stSegundoApellido,
+                        Direccion = Clientses.stDireccion,
+                        Telefono = Clientses.stTelefono,
+                        Correo = Clientses.stCorreo,
+                        Fecha_Nacimiento = Clientses.stFecha_Nacimiento
                     });
 
                     obEntities.SaveChanges();

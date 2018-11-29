@@ -16,9 +16,7 @@ namespace Proyecto.web.vistas.Index
             {
                 if (Request.QueryString["stCorreo"] != null)
                     stEmail = Request.QueryString["stCorreo"].ToString();
-
-                //ALT + 126
-               // iCuenta.ImageUrl = "~/Recursos/Imagenes/" + Session["SessionEmail"].ToString() + ".jpg";
+                    iCuenta.ImageUrl = "~/Recursos/Imagenes/" + Session["SessionEmail"].ToString() + ".jpg";
             }
         }
     }

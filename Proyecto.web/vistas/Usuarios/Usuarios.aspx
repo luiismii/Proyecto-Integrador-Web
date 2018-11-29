@@ -34,7 +34,7 @@
         <div class="form-row">
             <div class="col-md-12">
                 <h3><label class="badge badge-primary">Todos los Usuarios</label></h3>
-                <asp:GridView Width="100%" runat="server" EmptyDataText="No se encontraron registros" AutoGenerateColumns="False" ID="gvwUsuarios" BackColor="Turquoise" BorderColor="black" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black">
+                <asp:GridView Width="100%" runat="server" OnRowCommand="gvwUsuarios_RowCommand" EmptyDataText="No se encontraron registros" AutoGenerateColumns="False" ID="gvwUsuarios" BackColor="Turquoise" BorderColor="black" BorderStyle="None" BorderWidth="1px" CellPadding="4" ForeColor="Black">
                     <Columns>
                         <asp:TemplateField HeaderText="Codigo">
                             <ItemTemplate>
@@ -60,14 +60,14 @@
                                 <ItemTemplate>
                                     <asp:ImageButton runat="server" ID="ibEditar"
                                         ImageUrl="~/Recursos/Imagenes/edit.png" Height="20px" Width="20px"
-                                        CommandName="Agregar" CommandArgument="<%# ((GridViewRow)Container).RowIndex %>"></asp:ImageButton>
+                                        CommandName="Editar" CommandArgument="<%# ((GridViewRow)Container).RowIndex %>"></asp:ImageButton>
                                 </ItemTemplate>
                             </asp:TemplateField>
                         <asp:TemplateField>
                                 <ItemTemplate>
                                     <asp:ImageButton runat="server" ID="ibEliminar"
                                         ImageUrl="~/Recursos/Imagenes/remove.png" Height="20px" Width="20px"
-                                        CommandName="Agregar" CommandArgument="<%# ((GridViewRow)Container).RowIndex %>"></asp:ImageButton>
+                                        CommandName="Eliminar" CommandArgument="<%# ((GridViewRow)Container).RowIndex %>"></asp:ImageButton>
                                 </ItemTemplate>
                             </asp:TemplateField>
 

@@ -18,7 +18,7 @@ namespace Proyecto.web.Controladores
         }
 
 
-        public List<Logica.Modelos.ClsUsuarios> GetValidarUsuarioController(Logica.Modelos.ClsUsuarios obClsClsUsuarios)
+        public bool GetValidarUsuarioController(Logica.Modelos.ClsUsuarios obClsClsUsuarios)
         {
             try
             {

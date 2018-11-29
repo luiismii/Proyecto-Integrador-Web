@@ -60,7 +60,7 @@ namespace Proyecto.web.vistas.Registrar
                         stFecha_Nacimiento = txtFechaNacimiento.Text
                     };
 
-                    ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Mensaje!', '" + obClsRegistrarControladores.CreateClienteController(obClsPosiblesClientes) + "!', 'success') </script>");
+                    ClientScript.RegisterStartupScript(this.GetType(), "mensaje", "<script> swal('Mensaje!', '" + obClsRegistrarControladores.CreateClienteController(obClsUsuarios, obClsPosiblesClientes) + "!', 'success') </script>");
                    
                 }
                 Response.Redirect("../Login/Login.aspx");

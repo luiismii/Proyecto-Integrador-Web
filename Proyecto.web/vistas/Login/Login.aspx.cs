@@ -30,27 +30,27 @@ namespace Proyecto.web.vistas.Login
 
 				};
 				Controladores.LoginControladores ObloginControladores = new Controladores.LoginControladores();
-                //bool BlBandera =
-                ObloginControladores.GetValidarUsuarioController(obClsUsuarios);
-                
-				//if (BlBandera)
-				//{
-					//Session["SessionEmail"] = txtEmail.Text;
-					//if (chkRecordar.Checked)
-					//{
-						//HttpCookie cookie = new HttpCookie("cookieEmail", txtEmail.Text);
-						//cookie.Expires = DateTime.Now.AddDays(2);
-					//	Response.Cookies.Add(cookie);
-					//}
-					//else
-					//{
-						//HttpCookie cookie = new HttpCookie("cookieEmail", txtEmail.Text);
-						//cookie.Expires = DateTime.Now.AddDays(-1);
-						//Response.Cookies.Add(cookie);
-					//}
+                bool BlBandera = ObloginControladores.GetValidarUsuarioController(obClsUsuarios);
 
-					Response.Redirect("../Index/Index.aspx");
-			//} else throw new Exception("Usuario o Contraceña Incorrectos");
+                if (BlBandera)
+                {
+                    Session["SessionEmail"] = txtEmail.Text;
+                    if (chkRecordar.Checked)
+                    {
+                        HttpCookie cookie = new HttpCookie("cookieEmail", txtEmail.Text);
+                        cookie.Expires = DateTime.Now.AddDays(2);
+                        Response.Cookies.Add(cookie);
+                    }
+                    else
+                    {
+                        HttpCookie cookie = new HttpCookie("cookieEmail", txtEmail.Text);
+                        cookie.Expires = DateTime.Now.AddDays(-1);
+                        Response.Cookies.Add(cookie);
+                    }
+
+                    Response.Redirect("../Index/Index.aspx");
+                }
+                else throw new Exception("Usuario o Contraceña Incorrectos");
 
             }
             catch (Exception we)

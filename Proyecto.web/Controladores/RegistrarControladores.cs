@@ -6,13 +6,12 @@ namespace Proyecto.web.Controladores
     public class RegistrarControladores
     {
 
-        public string CreateClienteController(Logica.Modelos.ClsPosiblesClientes obClsPosiblesClientes)
+        public string CreateClienteController(Logica.Modelos.ClsUsuarios obClsUsuarios, Logica.Modelos.ClsPosiblesClientes obPosiblesClientes)
         {
             try
             {
-                Logica.BL.ClsClientes obClsClientes = new Logica.BL.ClsClientes();
-                return obClsClientes.CreateCliente(obClsPosiblesClientes);
-            }
+                Logica.BL.ClsClientes obClientes = new Logica.BL.ClsClientes();
+                return obClientes.CreateCliente(obClsUsuarios, obPosiblesClientes);            }
             catch (Exception ex) { throw ex; }
         }
 
